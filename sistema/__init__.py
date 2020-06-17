@@ -14,4 +14,4 @@ class Ping(Resource):
         }
 
 
-api.add_resource(Api, '/ping')
+api.add_resource(Ping, '/ping')
