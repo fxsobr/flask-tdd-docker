@@ -1,8 +1,9 @@
 from flask.cli import FlaskGroup
 
-from sistema import app, db
+from sistema import create_app, db
 
-cli = FlaskGroup(app)
+app = create_app()
+cli = FlaskGroup(create_app=create_app)
 
 
 @cli.command('recriar_db')
