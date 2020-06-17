@@ -8,4 +8,4 @@ done
 
 echo "PostgreSQL inicializado!"
 
-python manage.py run -h 0.0.0.0 -p 5000
+python manage.py run -h 0.0.0.0
