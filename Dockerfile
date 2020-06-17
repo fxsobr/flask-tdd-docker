@@ -10,4 +10,4 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-CMD python manage.py run -h 0.0.0.0 -p 5005
+CMD python manage.py run -h 0.0.0.0 -p 5000
