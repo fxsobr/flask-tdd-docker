@@ -9,5 +9,6 @@ class DevelopmentConfig(BaseConfig):
 class TestingConfig(BaseConfig):
     TESTING = True
 
+
 class ProductionConfig(BaseConfig):
     pass

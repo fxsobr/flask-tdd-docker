@@ -5,6 +5,8 @@ app = Flask(__name__)
 
 api = Api(app)
 
+app.config.from_object('sistema.config.DevelopmentConfig')
+
 
 class Ping(Resource):
     def get(self):
