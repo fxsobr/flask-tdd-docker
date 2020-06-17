@@ -12,9 +12,8 @@ services:
     ports:
       - 5005:5000
     environment:
-      - FLASK_APP=sistema/__init__.py
       - FLASK_ENV=development
-      - APP_SETTINGS=project.config.DevelopmentConfig
+      - APP_SETTINGS=sistema.config.DevelopmentConfig
       - DATABASE_URL=postgresql://postgres:postgres@usuarios-db:5432/usuarios_dev
       - DATABASE_TEST_URL=postgresql://postgres:postgres@usuarios-db:5432/usuarios_teste
     depends_on:

@@ -1,6 +1,7 @@
 from flask.cli import FlaskGroup
 
 from sistema import create_app, db
+from sistema.api.models import Usuario
 
 app = create_app()
 cli = FlaskGroup(create_app=create_app)
