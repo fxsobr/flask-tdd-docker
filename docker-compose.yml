@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
 
-  users:
+  usuarios:
     build:
       context: .
       dockerfile: Dockerfile
@@ -13,3 +13,4 @@ services:
     environment:
       - FLASK_APP=sistema/__init__.py
       - FLASK_ENV=development
+      - APP_SETTINGS=project.config.DevelopmentConfig
