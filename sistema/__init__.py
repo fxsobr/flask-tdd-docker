@@ -25,6 +25,7 @@ class Usuario(db.Model):
         self.usuario = usuario
         self.email = email
 
+
 class Ping(Resource):
     def get(self):
         return {
