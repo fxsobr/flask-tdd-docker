@@ -13,4 +13,4 @@ def test_adicionar_usuario(test_app, teste_database):
     )
     data = json.loads(resp.data.decode())
     assert resp.status_code == 201
-    assert 'mceolin@unidavi.edu.br foi adicionado com sucesso!' in data['message']
+    assert 'mceolin@unidavi.edu.br foi adicionado com sucesso!' in data['mensagem']

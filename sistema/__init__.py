@@ -16,7 +16,9 @@ def create_app(script_info=None):
     db.init_app(app)
 
     from sistema.api.ping import ping_blueprint
+    from sistema.api.usuarios import usuarios_blueprint
     app.register_blueprint(ping_blueprint)
+    app.register_blueprint(usuarios_blueprint)
 
     @app.shell_context_processor
     def ctx():
